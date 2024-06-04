@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    height: 500px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.info {
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.speedometer {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #007bff;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.speedometer:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.needle {
+    width: 2px;
+    height: 80px;
+    background: #007bff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(0deg);
+    transition: transform 0.5s;
+}
+
+.speed-display {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.leaflet-top.leaflet-right {
+    right: 10px;
+    top: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.location-display {
+    margin-top: 10px;
+}
