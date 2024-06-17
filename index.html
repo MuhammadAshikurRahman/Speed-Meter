@@ -3,28 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real-Time Speed Tracking</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Real-time Speedometer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Real-Time Speed Tracking</h1>
-    
-    <div class="info">
-        <div class="speedometer">
-            <div class="needle" id="needle"></div>
-        </div>
-        <div class="speed-display">
-            Your Speed: <span id="speed">0</span> km/h
-        </div>
-        <div class="location-display">
-            Location: <span id="location">Not available</span>
-        </div>
+    <div class="speedometer">
+        <div class="speed-value" id="speedValue">0</div>
+        <div class="unit">km/h</div>
     </div>
+    <div class="location" id="location">Fetching location...</div>
 
-    <div id="map"></div>
-    
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
